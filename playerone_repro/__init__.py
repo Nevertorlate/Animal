@@ -12,7 +12,9 @@ from .rendering import (
     ScenePointCloudState,
 )
 from .scene_conditioners import HistoryStructureSceneConditioner, build_structural_scene_conditioner
+from .tiny import build_tiny_playerone_pipeline
 from .training import PlayerOneTrainingHarness
+from .training_data import TrainingClipDataset, TrainingClipRecord, load_training_manifest, load_video_frames
 
 __all__ = [
     "AutoregressiveChunkResult",
@@ -32,7 +34,12 @@ __all__ = [
     "PrecomputedSceneConditioner",
     "SceneCondition",
     "ScenePointCloudState",
+    "TrainingClipDataset",
+    "TrainingClipRecord",
+    "build_tiny_playerone_pipeline",
+    "load_training_manifest",
     "load_motion_sequence",
     "load_point_maps",
+    "load_video_frames",
     "slice_temporal_tensor",
 ]
